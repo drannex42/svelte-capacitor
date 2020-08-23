@@ -62,4 +62,6 @@ or
 npm run build:ios
 ```
 
-This project was initially inspired by [@syonip](https://github.com/syonip/svelte-cordova-template)
+--
+
+<small>This project was inspired by [@syonip](https://github.com/syonip/svelte-cordova-template)</small>
