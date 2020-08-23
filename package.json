@@ -1,0 +1,35 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public --single",
+    "start:dev": "sirv public --single --dev",
+    "serve:capacitor": "sirv public --single --dev --host",
+    "build:android": "run-p build cap-run:android",
+    "build:ios": "run-p build && cap-run:ios",
+    "cap-run:android": "cap sync android && cap open android",
+    "cap-run:ios": "cap sync ios && cap open android",
+    "dev:ios": "run-p serve:capacitor autobuild cap-run:ios",
+    "dev:android": "run-p serve:capacitor autobuild cap-run:android"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "cross-env": "^7.0.2",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^2.4.0",
+    "@capacitor/cli": "^2.4.0",
+    "@capacitor/core": "^2.4.0",
+    "sirv-cli": "^1.0.0"
+  }
+}

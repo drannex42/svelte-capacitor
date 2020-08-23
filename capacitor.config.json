@@ -1,0 +1,17 @@
+{
+  "appId": "com.hello.svelte",
+  "appName": "Hello Svelte",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "public",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "server": {
+    "url": "http://YOUR SERVER ADDRESS HERE:PORT",
+    "cleartext": true
+  }
+}
