@@ -1,6 +1,6 @@
 # Svelte + Capacitor (w/ live reload) Template
 
-This is a project template for [Svelte](https://svelte.dev) + [CapacitorJS](capacitorjs.com) apps with live reload. 
+This is a project template for [Svelte](https://svelte.dev) + [CapacitorJS](https://capacitorjs.com) apps with live reload. 
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
