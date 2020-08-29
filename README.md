@@ -23,7 +23,7 @@ npm run dev
 ## Add your Capacitor platform
 
 ```bash
-npx cap platform add android // (or ios)
+npx cap add android // (or ios/electron)
 ```
 
 ## Develop on your device with livereload (hot reload)
