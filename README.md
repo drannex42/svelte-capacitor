@@ -24,7 +24,7 @@ npm run dev
 ### Add your Capacitor platform
 
 ```bash
-npx cap add android // (or ios/electron)
+npx cap add android // (or ios)
 ```
 
 ### Develop on your device with livereload (hot reload)
@@ -73,6 +73,10 @@ Since this is a Svelte applicaiton you will be able to use any routing manager t
 ### Find a bug? Want to add a feature? 
 
 Submit a PR! I would love to have more people working on this, the advantages of a system such as this vs NativeScript or React Native are innumerable especially in regards for how quickly you can get started and instant developer options and this could be built out to something great! 
+
+### Are you using this project! Let us know! 
+
+I would love to keep a collection of all the projects using this! 
 
 -----
 
