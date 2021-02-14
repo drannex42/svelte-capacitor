@@ -7,7 +7,7 @@
     "dev": "run-p start:dev autobuild",
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
-    "serve:capacitor": "sirv public --single --dev --host",
+    "serve:capacitor": "sirv public --single --dev --host --port 5001",
     "build:android": "run-p build cap-run:android",
     "build:ios": "run-p build && cap-run:ios",
     "cap-run:android": "cap sync android && cap open android",
