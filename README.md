@@ -82,4 +82,4 @@ I would love to keep a collection of all the projects using this!
 
 -----
 
-<small>Thank you to [@syonip](https://github.com/syonip/) for the inspiration for this project/</small>
+This project template was created by [t. Macleod Sawyer](https://macleodsawyer.com/) of [DNX Robotics](https://dnxrobotics.com) - [@drannex42](https://github.com/drannex42).
