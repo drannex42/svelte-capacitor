@@ -82,4 +82,4 @@ I would love to keep a collection of all the projects using this!
 
 -----
 
-This project template was created by [t. Macleod Sawyer](https://macleodsawyer.com/) of [DNX Robotics](https://dnxrobotics.com) - [@drannex42](https://github.com/drannex42).
+This template was created by [t. Macleod Sawyer](https://macleodsawyer.com/) of [DNX Robotics](https://dnxrobotics.com) - [Source can be found here](https://github.com/drannex42/svelte-capacitor)
