@@ -4,6 +4,7 @@ This is a project template for [Svelte](https://svelte.dev) + [CapacitorJS](http
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
+**Update 12021.06.09: There is a new version on the way that is far simpler and easier to develop with! Please click 'watch' at the top.**
 ## Setup
 
 ### Get started
