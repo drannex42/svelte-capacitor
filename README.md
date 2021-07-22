@@ -1,11 +1,11 @@
 ![](/assets/svelte_cap.png)
 # Svelte + Capacitor (w/ live reload) Template
 
-This is a project template for [Svelte](https://svelte.dev) + [CapacitorJS](https://capacitorjs.com) apps with live reload, granting the ability to quickly build production ready applications for iOS and Android at near native performance using Javascript (Svelte). 
+This is a project template for [Svelte](https://svelte.dev) + [CapacitorJS](https://capacitorjs.com) apps with live reload, granting the ability to quickly build production ready applications for iOS and Android at near-native performance using JavaScript (Svelte). 
 ## Changelog
 
-**v2.0.0** - The new version is here, this comes with some better defaults, vite as the build manager, built in routing library, typescript, and aliases. While this could be seen as an 'incremental' update I think this works as a v2.0.0 as it was a complete rewrite.
-  - **Build Tool**: Changed the build tool to Vite from rollup, this is the new and recommended way to develop svelte applications, it's faster, cleaner, and easier to handle. 
+**v2.0.0** - The new version is here, this comes with some better defaults, vite as the build manager, built in routing library, TypeScript, and aliases. While this could be seen as an 'incremental' update I think this works as a v2.0.0 as it was a complete rewrite.
+  - **Build Tool**: Changed the build tool to Vite from Rollup, this is the new and recommended way to develop Svelte applications, it's faster, cleaner, and easier to handle. 
   - **Routing**: Built in routing library, using Routify, I spent a considerable time debating on including one - I decided I would. This is mainly due to the amount of messages and emails(!) I received asking how to implement one, Routify is by far my favorite and so here it is. This is very easily removed and replaced with your preferred. 
   - **Typescript**: I personally do not use typescript as much as I should, but others do. I have included some TS configs for you. 
   - **@components, @store, and @utils**: If you have ever taken a look at sveltekit they have these nifty aliases throughout their code so you don't have to write '../../../components' or what have you. Now you can just do '@components/file' and Vite will readily load them from the components folder, this makes it easy to create changes as you don't need to change the file location on every move or copy. Please check out the [Vite Aliases](https://github.com/Subwaytime/vite-aliases) package for more questions.
@@ -47,7 +47,7 @@ If you're only targeting Android, you only need to change the `server.url` secti
 
 If you're targeting iOS or both, you will need to append your workstation IP to the `server.url` section in `capacitor.config.json` instead. To discover your workstation IP, just run `ifconfig` or find it on the network settings.
 
-Tip: Remember you will need the `http://` before the server ip.
+Tip: Remember you will need the `http://` before the server IP.
 
 Back in the root folder:
 
@@ -55,7 +55,7 @@ Back in the root folder:
 
 This will run the capacitor/svelte project with a web view pointing to your workstation's IP. You should see the message `Welcome to Svelte!` if svelte loaded correctly.
 
-Try to change something in App.svelte, and you should see the content reload in your device.
+Try to change something in `App.svelte`, and you should see the content reload in your device.
 
 * You need to have an emulator/device connected to adb
 * Your device has to be connected to the same wifi network as your workstation.
@@ -70,7 +70,7 @@ Try to change something in App.svelte, and you should see the content reload in 
 
 ### Developer Tools
 
-You can use any Chromioum-based browser and use their Developer Tools (for Android atleast, have not tested iOS) to debug and access console commands on your personal device, by going to chrome://inspect#devices., edge://inspect#devices., vivaldi://inspect#devices., brave://inspect#devices, &c.
+You can use any Chromium-based browser and use their Developer Tools (for Android atleast, have not tested iOS) to debug and access console commands on your personal device, by going to chrome://inspect#devices., edge://inspect#devices., vivaldi://inspect#devices., brave://inspect#devices, &c.
 
 The standard web inspector will also work for debugging and rewriting styling and html without using your IDE just like when building a normal website. This may have some issues with some forms of SVG-related svelte templating (I have had issues with using some chart libraries displaying in the web inspector), they will still show up on the device but not in the preview.
 
