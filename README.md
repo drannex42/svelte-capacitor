@@ -1,3 +1,4 @@
+![](/assets/svelte_cap.png)
 # Svelte + Capacitor (w/ live reload) Template
 
 This is a project template for [Svelte](https://svelte.dev) + [CapacitorJS](https://capacitorjs.com) apps with live reload, granting the ability to quickly build production ready applications for iOS and Android at near native performance using Javascript (Svelte). 
