@@ -55,7 +55,7 @@ Back in the root folder:
 
 This will run the capacitor/svelte project with a web view pointing to your workstation's IP. You should see the message `Welcome to Svelte!` if svelte loaded correctly.
 
-Try to change something in `App.svelte`, and you should see the content reload in your device.
+Try to change something in `App.svelte`, and you should see the content reload on your device.
 
 * You need to have an emulator/device connected to adb
 * Your device has to be connected to the same wifi network as your workstation.
