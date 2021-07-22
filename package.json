@@ -1,38 +1,51 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "svelte_capacitor",
+  "version": "2.0.0",
   "scripts": {
-    "build": "rollup -c",
-    "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild",
-    "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev",
-    "serve:capacitor": "sirv public --single --dev --host --port 5001",
-    "build:android": "run-p build cap-run:android",
-    "build:ios": "run-p build && cap-run:ios",
-    "cap-run:android": "cap sync android && cap open android",
-    "cap-run:ios": "cap sync ios && cap open android",
-    "dev:ios": "run-p serve:capacitor autobuild cap-run:ios",
-    "dev:android": "run-p serve:capacitor autobuild cap-run:android"
+    "#Build: Core": "Thesee scripts build the core application (routing logic, and views)",
+      "build:app": "routify -b && vite build",
+      "build:routify": "routify",
+
+    "#Platform: Build": "These build the application for their specific platforms",
+      "build:android": "run-s build:app cap-run:android",
+      "build:ios": "run-s build:app cap-run:ios",
+
+    "#Platform: Sync": "These build the application for their specific platforms",
+      "cap-run:android": "cap sync android && cap open android",
+      "cap-run:ios": "cap sync ios && cap open android",
+
+    "#Dev: Platform": "These enable HMR (Hot module reloading) directly on the device - please check the readme.md for more on this.",
+      "dev:ios": "run-p dev:start cap-run:ios",
+      "dev:android": "run-p dev:start cap-run:android",
+
+    "#Dev: Core": "These allow the code to be developed with HMR",
+      "dev:preview": "vite preview",
+      "dev:start": "run-p build:routify dev:vite",
+      "dev:vite": "vite --host --port 5000",
+
+    "#Utilities": "Various utilities",
+      "validate": "svelte-check"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^18.0.0",
-    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@roxi/routify": "^2.18.0",
+    "@sveltejs/vite-plugin-svelte": "*",
+    "@tsconfig/svelte": "^1.0.10",
     "cross-env": "^7.0.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
-    "rollup": "^2.45.2",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.1.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "svelte": "^3.37.0"
+    "svelte": "^3.37.0",
+    "svelte-preprocess": "^4.7.3",
+    "typescript": "^4.2.4",
+    "vite": "^2.2.3",
+    "vite-aliases": "^0.6.3",
+    "vite-plugin-compression": "^0.2.5",
+    "vite-tsconfig-paths": "^3.3.10"
   },
   "dependencies": {
-    "@capacitor/android": "^2.4.0",
-    "@capacitor/cli": "^2.4.0",
-    "@capacitor/core": "^2.4.0",
-    "sirv-cli": "^1.0.0"
+    "@capacitor/android": "^3.0.1",
+    "@capacitor/ios": "^3.0.1",
+    "@capacitor/cli": "^3.0.0",
+    "@capacitor/core": "^3.0.0"
   }
 }

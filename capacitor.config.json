@@ -1,6 +1,6 @@
 {
-  "appId": "com.hello.svelte",
-  "appName": "Hello Svelte",
+  "appId": "com.svelte.capacitor",
+  "appName": "Svelte Capacitor",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "public",
@@ -9,9 +9,5 @@
       "launchShowDuration": 0
     }
   },
-  "cordova": {},
-  "server": {
-    "url": "http://change-me:5001",
-    "cleartext": true
-  }
+  "cordova": {}
 }
