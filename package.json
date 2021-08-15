@@ -21,7 +21,7 @@
     "#Dev: Core": "These allow the code to be developed with HMR",
       "dev:preview": "vite preview",
       "dev:start": "run-p build:routify dev:vite",
-      "dev:vite": "vite --host --port 5000",
+      "dev:vite": "vite --host --port 5001",
 
     "#Utilities": "Various utilities",
       "validate": "svelte-check"
