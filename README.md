@@ -78,7 +78,7 @@ You may use the address bar in the developer tools to navigate to direct views i
 
 ### Assets 
 
-Place any assets, CSS, client JS, Images in the `assets` folder - not the public folder! On build and usage this will add everything to the public dist folder for copying to the device application. When referring to assets be sure to refer to them as `assets/` or `/assets` in your svelte code. 
+Place any assets, CSS, client JS, Images in the `assets` folder - not the public folder! On build and usage this will add everything to the public dist folder for copying to the device application. [See Vite.js on this settings](https://vitejs.dev/guide/assets.html#the-public-directory).
 
 ### Aliases
 
