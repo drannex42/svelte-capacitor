@@ -86,9 +86,9 @@ Place any assets, CSS, client JS, Images in the `assets` folder - not the public
 ### Routing Libraries
 Since this is a Svelte application you will be able to use any routing manager that you prefer. I prefer routify, but others such as the following will work as well (Routify is built into this project, but easily changed)
  - Routify - https://github.com/roxiness/routify
- - ItalyPaleAple/svelte-spa-router - https://github.com/ItalyPaleAle/svelte-spa-router
+ - ItalyPaleAle/svelte-spa-router - https://github.com/ItalyPaleAle/svelte-spa-router
  - EmilTholin/svelte-routing - https://github.com/EmilTholin/svelte-routing
- - orgegorka/svelte-router - https://github.com/jorgegorka/svelte-router
+ - jorgegorka/svelte-router - https://github.com/jorgegorka/svelte-router
 
  ### Accessing Device APIs
  CapacitorJS is/was based on Cordova and has *complete* backwards compatibility with cordova plugins. To find plugins that allow you to access the device api's easier, attempt to find cordova or capacitor plugins. You will need to view their (capacitorjs) docs to learn how to properly accesss those.
