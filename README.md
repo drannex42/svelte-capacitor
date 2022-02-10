@@ -60,6 +60,20 @@ Try to change something in `App.svelte`, and you should see the content reload o
 * You need to have an emulator/device connected to adb
 * Your device has to be connected to the same wifi network as your workstation.
 
+
+### Change Splash screen and app icon:
+
+* Add icon.png and splash.png to resources dir
+* Recomended size:
+  - Icon - 512x512
+  - Splash - 1920x1920
+* Next, run the following to generate all images then copy them into the native projects:
+```
+cordova-res ios --skip-config --copy
+cordova-res android --skip-config --copy
+```
+
+
 ### To build a production application:
 
 **Remember to remove the `server.url` in `capacitor.config.json`**
