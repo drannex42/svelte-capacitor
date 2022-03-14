@@ -121,4 +121,4 @@ I would love to keep a collection of all the projects using this!
 
 -----
 
-This template was created by [Drannex42 (Macleod Sawyer)](https:/drannex42.com/) of [DNX Industries](https://dnxi.org) - [Source can be found here](https://github.com/drannex42/svelte-capacitor)
+This template was created by [Drannex42 (Macleod Sawyer)](https://drannex42.com/) of [DNX Industries](https://dnxi.org) - [Source can be found here](https://github.com/drannex42/svelte-capacitor)
